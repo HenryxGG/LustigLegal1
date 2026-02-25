@@ -13,8 +13,8 @@ export function Footer() {
                     <div>
                         <h3 className="text-white font-serif mb-4">Enlaces Rápidos</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-accent transition-colors">Áreas de Práctica</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Abogados</a></li>
+                            <li><a href="/#servicios" className="hover:text-accent transition-colors">Áreas de Práctica</a></li>
+                            <li><a href="/#equipo" className="hover:text-accent transition-colors">Abogados</a></li>
                             <li><a href="#" className="hover:text-accent transition-colors">Casos de Éxito</a></li>
                             <li><a href="#" className="hover:text-accent transition-colors">Carreras</a></li>
                         </ul>

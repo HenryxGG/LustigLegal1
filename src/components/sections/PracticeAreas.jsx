@@ -36,7 +36,7 @@ const practices = [
 
 export function PracticeAreas() {
     return (
-        <section className="py-24 bg-white">
+        <section id="servicios" className="py-24 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">Áreas de Práctica</h2>
