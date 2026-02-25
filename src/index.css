@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    /* 
+     * GLOBAL CURSOR STRATEGY
+     * 1. Set default arrow cursor for all elements to hide the I-beam (text) cursor 
+     *    over selectable text, maintaining a clean 'app-like' feel.
+     * 2. Restore pointer cursor for interactive elements (links, buttons, labels).
+     * 3. Restore text cursor ONLY for input fields to maintain standard form usability.
+     * 4. This setup allows text selection without changing the cursor to an I-beam.
+     */
+    * {
+        cursor: default;
+    }
+
+    a,
+    button,
+    [role="button"],
+    input[type="submit"],
+    input[type="button"],
+    label,
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    input[type="search"],
+    textarea,
+    .cursor-text {
+        cursor: text;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply font-sans text-slate-800 bg-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-serif;
+}
