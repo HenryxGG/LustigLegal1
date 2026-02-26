@@ -1,4 +1,4 @@
-export function Footer() {
+export function Footer({ onOpenConsultation }) {
     return (
         <footer className="bg-primary text-slate-400 py-12 border-t border-slate-800">
             <div className="container mx-auto px-6">
@@ -15,18 +15,23 @@ export function Footer() {
                         <ul className="space-y-2 text-sm">
                             <li><a href="/#servicios" className="hover:text-accent transition-colors">Áreas de Práctica</a></li>
                             <li><a href="/#equipo" className="hover:text-accent transition-colors">Abogados</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Casos de Éxito</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Carreras</a></li>
+                            <li><a href="/casos" className="hover:text-accent transition-colors">Casos de Éxito</a></li>
+                            <li>
+                                <button
+                                    onClick={onOpenConsultation}
+                                    className="hover:text-accent transition-colors text-left"
+                                >
+                                    Consulta Gratuita
+                                </button>
+                            </li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="text-white font-serif mb-4">Legal</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-accent transition-colors">Política de Privacidad</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Términos de Servicio</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Aviso Legal</a></li>
-                            <li><a href="#" className="hover:text-accent transition-colors">Accesibilidad</a></li>
+                            <li><a href="/privacidad" className="hover:text-accent transition-colors">Política de Privacidad</a></li>
+                            <li><a href="/terminos" className="hover:text-accent transition-colors">Términos de Servicio</a></li>
                         </ul>
                     </div>
                 </div>

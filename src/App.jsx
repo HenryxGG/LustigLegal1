@@ -5,6 +5,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { ConsultationModal } from './components/ui/ConsultationModal';
 import { WhatsAppButton } from './components/ui/WhatsAppButton';
+import { CookieBanner } from './components/ui/CookieBanner';
 
 // Pages
 import { Home } from './pages/Home';
@@ -12,13 +13,25 @@ import { PracticeAreasPage } from './pages/PracticeAreasPage';
 import { TeamPage } from './pages/TeamPage';
 import { CaseStudiesPage } from './pages/CaseStudiesPage';
 import { BlogPage } from './pages/BlogPage';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfService } from './pages/TermsOfService';
 
-function ScrollToTop() {
-    const { pathname } = useLocation();
+function ScrollManager() {
+    const { pathname, hash } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
+        if (hash) {
+            // Wait a small bit to ensure the section is rendered
+            setTimeout(() => {
+                const element = document.getElementById(hash.replace('#', ''));
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [pathname, hash]);
 
     return null;
 }
@@ -31,7 +44,7 @@ function App() {
 
     return (
         <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-background overflow-x-hidden">
-            <ScrollToTop />
+            <ScrollManager />
             <Navbar onOpenConsultation={openConsultation} />
             <main className="flex-grow">
                 <Routes>
@@ -40,9 +53,11 @@ function App() {
                     <Route path="/equipo" element={<TeamPage />} />
                     <Route path="/casos" element={<CaseStudiesPage />} />
                     <Route path="/articulos" element={<BlogPage />} />
+                    <Route path="/privacidad" element={<PrivacyPolicy />} />
+                    <Route path="/terminos" element={<TermsOfService />} />
                 </Routes>
             </main>
-            <Footer />
+            <Footer onOpenConsultation={openConsultation} />
 
             {/* Global Modal Container */}
             <ConsultationModal
@@ -52,6 +67,9 @@ function App() {
 
             {/* WhatsApp Floating Button */}
             <WhatsAppButton />
+
+            {/* Cookie Acceptance Banner */}
+            <CookieBanner />
         </div>
     );
 }
