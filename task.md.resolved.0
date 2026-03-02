@@ -1,0 +1,24 @@
+# Law Firm Landing Page Tasks
+
+## Planning Phase
+- [ ] Create Design Specification (`design_spec.md`) <!-- id: 1 -->
+- [ ] Generate Visual Mockup for Hero Section <!-- id: 2 -->
+- [ ] User Review & Approval of Design <!-- id: 3 -->
+
+## Setup Phase
+- [ ] Initialize React Project with Vite (TypeScript + SWC) <!-- id: 4 -->
+- [ ] install Tailwind CSS & Framer Motion <!-- id: 5 -->
+- [ ] Configure Tailwind Theme (Colors, Fonts) <!-- id: 6 -->
+
+## Implementation Phase
+- [ ] Implement Navbar & Hero Section <!-- id: 7 -->
+- [ ] Implement Practice Areas Grid <!-- id: 8 -->
+- [ ] Implement Team Section <!-- id: 9 -->
+- [ ] Implement Social Proof (Testimonials/Logos) <!-- id: 10 -->
+- [ ] Implement Contact Form (Validation + Map Placeholder) <!-- id: 11 -->
+- [ ] Implement Footer <!-- id: 12 -->
+
+## Verification Phase
+- [ ] Verify Responsive Design (Mobile/Tablet/Desktop) <!-- id: 13 -->
+- [ ] Verify Animations (Framer Motion) <!-- id: 14 -->
+- [ ] Final Polish & Asset Optimization <!-- id: 15 -->
