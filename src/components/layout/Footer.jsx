@@ -4,7 +4,7 @@ export function Footer({ onOpenConsultation }) {
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-2">
-                        <h2 className="text-2xl font-serif text-white mb-4">Lustig & Asociados</h2>
+                        <h2 className="text-2xl font-serif text-white mb-4">Forluncor</h2>
                         <p className="max-w-sm mb-6">
                             Defendiendo sus derechos, protegiendo sus activos y asegurando su futuro con dedicación inquebrantable y experiencia legal de primer nivel.
                         </p>
@@ -21,7 +21,7 @@ export function Footer({ onOpenConsultation }) {
                                     onClick={onOpenConsultation}
                                     className="hover:text-accent transition-colors text-left"
                                 >
-                                    Consulta Gratuita
+                                    Agendar Consulta
                                 </button>
                             </li>
                         </ul>
@@ -37,7 +37,7 @@ export function Footer({ onOpenConsultation }) {
                 </div>
 
                 <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs">
-                    <p>&copy; {new Date().getFullYear()} Lustig & Asociados, P.C. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} Forluncor. Todos los derechos reservados.</p>
                     <p className="mt-2 md:mt-0">Publicidad de Abogados. Resultados previos no garantizan un resultado similar.</p>
                 </div>
             </div>

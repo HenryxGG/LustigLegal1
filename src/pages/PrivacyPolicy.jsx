@@ -13,7 +13,7 @@ export function PrivacyPolicy() {
                     <section className="mb-8">
                         <h2 className="text-2xl font-serif font-bold text-secondary mb-4">1. Identidad del Responsable</h2>
                         <p className="text-slate-600">
-                            El tratamiento de los datos facilitados a través de esta página web es responsabilidad de <strong>Lustig & Asociados</strong>, debidamente constituido en la República del Ecuador.
+                            El tratamiento de los datos facilitados a través de esta página web es responsabilidad de <strong>Forluncor</strong>, debidamente constituido en la República del Ecuador.
                         </p>
                     </section>
 
@@ -43,7 +43,7 @@ export function PrivacyPolicy() {
                     <section className="mb-8">
                         <h2 className="text-2xl font-serif font-bold text-secondary mb-4">5. Derechos del Usuario</h2>
                         <p className="text-slate-600">
-                            El usuario puede solicitar la eliminación o actualización de sus datos en cualquier momento enviando un correo a <a href="mailto:contacto@lustiglegal.com" className="text-accent hover:underline">contacto@lustiglegal.com</a>.
+                            El usuario puede solicitar la eliminación o actualización de sus datos en cualquier momento enviando un correo a <a href="mailto:contacto@forluncor.com" className="text-accent hover:underline">contacto@forluncor.com</a>.
                         </p>
                     </section>
                 </div>

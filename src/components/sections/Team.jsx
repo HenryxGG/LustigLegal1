@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const team = [
     {
-        name: "Eleanor Lustig",
+        name: "Eleanor Forluncor",
         role: "Socia Fundadora",
         bio: "Más de 25 años de experiencia en litigios corporativos y negociaciones de alto riesgo.",
         image: "images/socio1.jpg"

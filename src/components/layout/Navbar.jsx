@@ -40,12 +40,11 @@ export function Navbar({ onOpenConsultation }) {
                 <div className="container mx-auto px-6 flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2 relative z-50">
                         {/* Logo */}
-                        <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center">
-                            <span className="text-primary font-serif font-bold text-lg">L</span>
-                        </div>
-                        <span className={`text-xl font-serif font-bold tracking-wide ${isScrolled || !isHome || isMobileMenuOpen ? 'text-white' : 'text-white'}`}>
-                            Lustig & <span className="text-accent">Asociados</span>
-                        </span>
+                        <img
+                            src="/forluncor-logo.svg"
+                            alt="Forluncor"
+                            className="h-16 w-auto object-contain bg-white rounded-sm p-1"
+                        />
                     </Link>
 
                     {/* Desktop Menu */}
@@ -68,7 +67,7 @@ export function Navbar({ onOpenConsultation }) {
                             className={!isScrolled && isHome && "border-white/20 hover:bg-white/10"}
                             onClick={onOpenConsultation}
                         >
-                            Consulta Gratuita
+                            Agendar Consulta
                         </Button>
                     </div>
 
@@ -114,7 +113,7 @@ export function Navbar({ onOpenConsultation }) {
                                     onOpenConsultation();
                                 }}
                             >
-                                Consulta Gratuita
+                                Agendar Consulta
                             </Button>
                         </div>
                     </div>

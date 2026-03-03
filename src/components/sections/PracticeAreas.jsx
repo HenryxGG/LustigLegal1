@@ -50,11 +50,14 @@ export function PracticeAreas() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            whileHover={{ y: -5 }}
-                            className="group p-8 border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                            transition={{ delay: index * 0.1, duration: 0.5 }}
+                            whileHover={{
+                                y: -8,
+                                transition: { type: "spring", stiffness: 400, damping: 25 }
+                            }}
+                            className="group p-8 border-2 border-slate-100 bg-slate-50 hover:bg-white hover:border-accent hover:shadow-2xl transition-colors duration-300 relative"
                         >
-                            <div className="absolute top-0 left-0 w-full h-1 bg-accent transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                            {/* Icon container */}
 
                             <practice.icon className="w-10 h-10 text-accent mb-6" strokeWidth={1.5} />
 

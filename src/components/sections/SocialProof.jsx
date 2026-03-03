@@ -6,7 +6,7 @@ const testimonials = [
         author: "CEO, Fortune 500 Tech Firm"
     },
     {
-        quote: "Lustig & Asociados brindó claridad y confianza cuando más lo necesitábamos. Verdaderamente excepcional.",
+        quote: "Forluncor brindó claridad y confianza cuando más lo necesitábamos. Verdaderamente excepcional.",
         author: "Director, Grupo Inmobiliario Global"
     },
     {

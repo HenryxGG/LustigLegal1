@@ -7,7 +7,13 @@ export function CookieBanner() {
 
     useEffect(() => {
         // Check if user has already accepted cookies
-        const hasAccepted = localStorage.getItem('cookies-accepted');
+        let hasAccepted = false;
+        try {
+            hasAccepted = localStorage.getItem('cookies-accepted');
+        } catch (e) {
+            console.warn('localStorage is blocked or unavailable:', e);
+        }
+
         if (!hasAccepted) {
             // Show banner after a short delay
             const timer = setTimeout(() => setIsVisible(true), 1500);
@@ -16,7 +22,11 @@ export function CookieBanner() {
     }, []);
 
     const handleAccept = () => {
-        localStorage.setItem('cookies-accepted', 'true');
+        try {
+            localStorage.setItem('cookies-accepted', 'true');
+        } catch (e) {
+            console.warn('localStorage is blocked or unavailable:', e);
+        }
         setIsVisible(false);
     };
 

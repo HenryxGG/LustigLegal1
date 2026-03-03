@@ -13,7 +13,7 @@ export function TermsOfService() {
                     <section className="mb-8">
                         <h2 className="text-2xl font-serif font-bold text-secondary mb-4">1. Propiedad Intelectual</h2>
                         <p className="text-slate-600">
-                            Todo el contenido de este sitio web, incluyendo de forma enunciativa pero no limitativa: artículos legales, logotipos, diseño gráfico, código fuente y estructura de navegación, es propiedad exclusiva de <strong>Lustig & Asociados</strong>. Queda prohibida su reproducción, copia o distribución sin autorización expresa.
+                            Todo el contenido de este sitio web, incluyendo de forma enunciativa pero no limitativa: artículos legales, logotipos, diseño gráfico, código fuente y estructura de navegación, es propiedad exclusiva de <strong>Forluncor</strong>. Queda prohibida su reproducción, copia o distribución sin autorización expresa.
                         </p>
                     </section>
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300">
+    <g fill="#0b1a2d">
+        <!-- F top stem -->
+        <rect x="50" y="30" width="180" height="35" />
+        
+        <!-- F vertical left pillar part (solid top part) -->
+        <rect x="50" y="30" width="60" height="70" />
+
+        <!-- F vertical pillar structure top cap -->
+        <rect x="45" y="100" width="70" height="15" />
+        
+        <!-- F middle connector block inside the column area -->
+        <rect x="110" y="125" width="90" height="30" />
+
+        <!-- pillar columns -->
+        <rect x="50" y="115" width="12" height="110" />
+        <rect x="70" y="115" width="12" height="110" />
+        <rect x="90" y="115" width="12" height="110" />
+        
+        <!-- pillar bottom caps -->
+        <rect x="45" y="225" width="70" height="15" />
+        <rect x="40" y="240" width="80" height="15" />
+
+        <!-- ORLUNCOR -->
+        <text x="220" y="160" font-family="'Times New Roman', Times, serif" font-weight="bold" font-size="130" letter-spacing="4">ORLUNCOR</text>
+
+        <!-- ABOGADOS and lines -->
+        <line x1="140" y1="230" x2="390" y2="230" stroke="#0b1a2d" stroke-width="4" />
+        <text x="410" y="240" font-family="'Times New Roman', Times, serif" font-weight="bold" font-size="44" letter-spacing="6">ABOGADOS</text>
+        <line x1="730" y1="230" x2="980" y2="230" stroke="#0b1a2d" stroke-width="4" />
+    </g>
+</svg>

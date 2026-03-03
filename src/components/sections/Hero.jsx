@@ -29,7 +29,7 @@ export function Hero({ onOpenConsultation }) {
                         transition={{ delay: 0.5 }}
                         className="text-accent tracking-[0.2em] text-sm uppercase font-semibold mb-6"
                     >
-                        Lustig & Asociados
+                        Forluncor
                     </motion.p>
 
                     <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-8">

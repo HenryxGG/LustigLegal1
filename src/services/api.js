@@ -1,5 +1,5 @@
 /**
- * API Service for Lustig & Asociados
+ * API Service for Forluncor
  * Handles communication with the secure backend for consultations.
  */
 

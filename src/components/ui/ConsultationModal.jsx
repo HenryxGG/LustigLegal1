@@ -91,8 +91,8 @@ export function ConsultationModal({ isOpen, onClose }) {
                         {/* Header */}
                         <div className="bg-primary p-6 text-white flex items-center justify-between">
                             <div>
-                                <h3 className="text-xl font-serif font-bold">Consulta Gratuita</h3>
-                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">Lustig & Asociados</p>
+                                <h3 className="text-xl font-serif font-bold">Agendar Consulta</h3>
+                                <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">Forluncor</p>
                             </div>
                             <button
                                 onClick={onClose}
