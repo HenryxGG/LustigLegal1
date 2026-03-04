@@ -1,38 +1,7 @@
 import { motion } from 'framer-motion';
-import { Scale, Shield, Users, FileText, Briefcase, Gavel } from 'lucide-react';
-
-const practices = [
-    {
-        title: "Derecho Corporativo",
-        description: "Navegando complejas fusiones, adquisiciones y gobierno corporativo con precisión.",
-        icon: Briefcase,
-    },
-    {
-        title: "Litigio Comercial",
-        description: "Representación agresiva y estratégica en disputas comerciales de alto riesgo.",
-        icon: Scale,
-    },
-    {
-        title: "Propiedad Intelectual",
-        description: "Protegiendo sus innovaciones y activos de marca en un mercado global competitivo.",
-        icon: Shield,
-    },
-    {
-        title: "Bienes Raíces",
-        description: "Asesoría integral para transacciones y desarrollo de propiedades comerciales.",
-        icon: FileText,
-    },
-    {
-        title: "Family Office",
-        description: "Gestión legal discreta y holística para individuos de alto patrimonio neto.",
-        icon: Users,
-    },
-    {
-        title: "Defensa Penal",
-        description: "Defensa inquebrantable para aquellos que enfrentan serias acusaciones de delitos financieros.",
-        icon: Gavel,
-    },
-];
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { practiceAreasData } from '../../data/practiceAreas';
 
 export function PracticeAreas() {
     return (
@@ -44,7 +13,7 @@ export function PracticeAreas() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {practices.map((practice, index) => (
+                    {practiceAreasData.map((practice, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
@@ -55,19 +24,25 @@ export function PracticeAreas() {
                                 y: -8,
                                 transition: { type: "spring", stiffness: 400, damping: 25 }
                             }}
-                            className="group p-8 border-2 border-slate-100 bg-slate-50 hover:bg-white hover:border-accent hover:shadow-2xl transition-colors duration-300 relative"
+                            className="group relative border-2 border-slate-100 bg-slate-50 hover:bg-white hover:border-accent hover:shadow-2xl transition-all duration-300 rounded-xl overflow-hidden"
                         >
-                            {/* Icon container */}
+                            <Link
+                                to={`/practicas/${practice.slug}`}
+                                className="block p-8 h-full w-full outline-none focus-visible:ring-4 focus-visible:ring-accent focus-visible:ring-opacity-50"
+                                aria-label={`Ver detalles sobre ${practice.title}`}
+                            >
+                                {/* Icon container */}
+                                <practice.icon className="w-10 h-10 text-accent mb-6" strokeWidth={1.5} />
 
-                            <practice.icon className="w-10 h-10 text-accent mb-6" strokeWidth={1.5} />
+                                <h3 className="text-xl font-serif font-semibold text-primary mb-3 group-hover:text-accent transition-colors flex items-center justify-between">
+                                    {practice.title}
+                                    <ArrowRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
+                                </h3>
 
-                            <h3 className="text-xl font-serif font-semibold text-primary mb-3 group-hover:text-accent transition-colors">
-                                {practice.title}
-                            </h3>
-
-                            <p className="text-slate-600 leading-relaxed text-sm">
-                                {practice.description}
-                            </p>
+                                <p className="text-slate-600 leading-relaxed text-sm">
+                                    {practice.shortDescription}
+                                </p>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

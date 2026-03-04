@@ -4,6 +4,7 @@ import { X, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { Button } from './Button';
 import { Input } from './Input';
 import { sendConsultation } from '../../services/api';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export function ConsultationModal({ isOpen, onClose }) {
     const [formData, setFormData] = useState({
@@ -49,6 +50,7 @@ export function ConsultationModal({ isOpen, onClose }) {
         return null;
     };
 
+    const { executeRecaptcha } = useGoogleReCaptcha();
     const handleSubmit = async (e) => {
         e.preventDefault();
         const error = validateForm();
@@ -58,8 +60,20 @@ export function ConsultationModal({ isOpen, onClose }) {
             return;
         }
 
+        if (!executeRecaptcha) {
+            console.error('reCAPTCHA no está listo o conectado.');
+            setStatus('error');
+            setErrorMessage('Error de seguridad. Recarga la página.');
+            return;
+        }
+
         setStatus('loading');
         try {
+            // Ejecutamos silenciosamente el captcha
+            const token = await executeRecaptcha('consultation_modal');
+            console.log('reCAPTCHA Token generado (invisible):', token);
+
+            // TODO: Cuando exista backend real, se enviaría el token junto a formData
             await sendConsultation(formData);
             setStatus('success');
         } catch (err) {

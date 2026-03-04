@@ -7,9 +7,11 @@ import { ConsultationModal } from './components/ui/ConsultationModal';
 import { WhatsAppButton } from './components/ui/WhatsAppButton';
 import { CookieBanner } from './components/ui/CookieBanner';
 
-// Pages
+import { HelmetProvider } from 'react-helmet-async';
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import { Home } from './pages/Home';
 import { PracticeAreasPage } from './pages/PracticeAreasPage';
+import { PracticeAreaDetailPage } from './pages/PracticeAreaDetailPage';
 import { TeamPage } from './pages/TeamPage';
 import { CaseStudiesPage } from './pages/CaseStudiesPage';
 import { BlogPage } from './pages/BlogPage';
@@ -42,35 +44,43 @@ function App() {
     const openConsultation = () => setIsConsultationModalOpen(true);
     const closeConsultation = () => setIsConsultationModalOpen(false);
 
+    // Development RECAPTCHA site key
+    const reCaptchaKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+
     return (
-        <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-background overflow-x-hidden">
-            <ScrollManager />
-            <Navbar onOpenConsultation={openConsultation} />
-            <main className="flex-grow">
-                <Routes>
-                    <Route path="/" element={<Home onOpenConsultation={openConsultation} />} />
-                    <Route path="/practica" element={<PracticeAreasPage />} />
-                    <Route path="/equipo" element={<TeamPage />} />
-                    <Route path="/casos" element={<CaseStudiesPage />} />
-                    <Route path="/articulos" element={<BlogPage />} />
-                    <Route path="/privacidad" element={<PrivacyPolicy />} />
-                    <Route path="/terminos" element={<TermsOfService />} />
-                </Routes>
-            </main>
-            <Footer onOpenConsultation={openConsultation} />
+        <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>
+            <HelmetProvider>
+                <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-background overflow-x-hidden">
+                    <ScrollManager />
+                    <Navbar onOpenConsultation={openConsultation} />
+                    <main className="flex-grow">
+                        <Routes>
+                            <Route path="/" element={<Home onOpenConsultation={openConsultation} />} />
+                            <Route path="/practica" element={<PracticeAreasPage />} />
+                            <Route path="/practicas/:slug" element={<PracticeAreaDetailPage />} />
+                            <Route path="/equipo" element={<TeamPage />} />
+                            <Route path="/casos" element={<CaseStudiesPage />} />
+                            <Route path="/articulos" element={<BlogPage />} />
+                            <Route path="/privacidad" element={<PrivacyPolicy />} />
+                            <Route path="/terminos" element={<TermsOfService />} />
+                        </Routes>
+                    </main>
+                    <Footer onOpenConsultation={openConsultation} />
 
-            {/* Global Modal Container */}
-            <ConsultationModal
-                isOpen={isConsultationModalOpen}
-                onClose={closeConsultation}
-            />
+                    {/* Global Modal Container */}
+                    <ConsultationModal
+                        isOpen={isConsultationModalOpen}
+                        onClose={closeConsultation}
+                    />
 
-            {/* WhatsApp Floating Button */}
-            <WhatsAppButton />
+                    {/* WhatsApp Floating Button */}
+                    <WhatsAppButton />
 
-            {/* Cookie Acceptance Banner */}
-            <CookieBanner />
-        </div>
+                    {/* Cookie Acceptance Banner */}
+                    <CookieBanner />
+                </div>
+            </HelmetProvider>
+        </GoogleReCaptchaProvider>
     );
 }
 
