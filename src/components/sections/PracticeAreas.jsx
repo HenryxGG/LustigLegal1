@@ -1,6 +1,8 @@
+"use client"
+
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { practiceAreasData } from '../../data/practiceAreas';
 
 export function PracticeAreas() {
@@ -27,7 +29,7 @@ export function PracticeAreas() {
                             className="group relative border-2 border-slate-100 bg-slate-50 hover:bg-white hover:border-accent hover:shadow-2xl transition-all duration-300 rounded-xl overflow-hidden"
                         >
                             <Link
-                                to={`/practicas/${practice.slug}`}
+                                href={`/practicas/${practice.slug}`}
                                 className="block p-8 h-full w-full outline-none focus-visible:ring-4 focus-visible:ring-accent focus-visible:ring-opacity-50"
                                 aria-label={`Ver detalles sobre ${practice.title}`}
                             >

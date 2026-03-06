@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/articulos/page": "/articulos",
+  "/casos/page": "/casos",
+  "/equipo/page": "/equipo",
+  "/page": "/",
+  "/practica/page": "/practica",
+  "/practicas/[slug]/page": "/practicas/[slug]",
+  "/privacidad/page": "/privacidad",
+  "/terminos/page": "/terminos"
+}

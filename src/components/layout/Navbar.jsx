@@ -1,26 +1,35 @@
+"use client"
+
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Button } from '../ui/Button';
 import { Menu, X } from 'lucide-react';
 
 export function Navbar({ onOpenConsultation }) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const { scrollY } = useScroll();
-    const location = useLocation();
+    const pathname = usePathname();
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         setIsScrolled(latest > 50);
     });
 
-    const isHome = location.pathname === '/';
+    const isHome = pathname === '/';
+
+    // Mark as mounted (client-side only)
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Close mobile menu when route changes
     useEffect(() => {
         setIsMobileMenuOpen(false);
-    }, [location]);
+    }, [pathname]);
 
     // Lock body scroll when menu is open
     useEffect(() => {
@@ -38,7 +47,7 @@ export function Navbar({ onOpenConsultation }) {
                     }`}
             >
                 <div className="container mx-auto px-6 flex items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2 relative z-50">
+                    <Link href="/" className="flex items-center gap-2 relative z-50">
                         {/* Logo */}
                         <img
                             src="/forluncor-logo.svg"
@@ -49,16 +58,16 @@ export function Navbar({ onOpenConsultation }) {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center gap-8">
-                        <Link to="/practica" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
+                        <Link href="/practica" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
                             Áreas de Práctica
                         </Link>
-                        <Link to="/equipo" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
+                        <Link href="/equipo" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
                             Nuestro Equipo
                         </Link>
-                        <Link to="/casos" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
+                        <Link href="/casos" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
                             Casos de Éxito
                         </Link>
-                        <Link to="/articulos" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
+                        <Link href="/articulos" className="text-sm font-medium text-slate-300 hover:text-accent transition-colors uppercase tracking-widest">
                             Artículos
                         </Link>
 
@@ -81,26 +90,26 @@ export function Navbar({ onOpenConsultation }) {
                 </div>
             </motion.nav>
 
-            {/* Mobile Menu Overlay - Portalled to body to escape transforms */}
-            {createPortal(
+            {/* Mobile Menu Overlay — only rendered after hydration to prevent mismatch */}
+            {mounted && createPortal(
                 <div
                     className={`fixed inset-0 z-40 flex flex-col items-center justify-center transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}
                     style={{ backgroundColor: 'rgba(11, 17, 32, 0.95)' }}
                 >
                     <div className="flex flex-col items-center gap-8">
-                        <Link to="/" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
+                        <Link href="/" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
                             Inicio
                         </Link>
-                        <Link to="/practica" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
+                        <Link href="/practica" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
                             Áreas de Práctica
                         </Link>
-                        <Link to="/equipo" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
+                        <Link href="/equipo" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
                             Nuestro Equipo
                         </Link>
-                        <Link to="/casos" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
+                        <Link href="/casos" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
                             Casos de Éxito
                         </Link>
-                        <Link to="/articulos" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
+                        <Link href="/articulos" className="text-2xl font-serif font-medium text-white hover:text-accent transition-colors">
                             Artículos
                         </Link>
 

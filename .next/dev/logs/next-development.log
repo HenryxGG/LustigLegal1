@@ -1,0 +1,542 @@
+[00:00:01.597] Server  LOG     ✓ Ready in 1086ms
+[00:00:03.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.613] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/practica" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:00:19.863] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.023] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/practica" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:00:22.622] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:42.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:42.942] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:00:52.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:52.208] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/privacidad" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:00:53.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:53.907] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/terminos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:00:55.724] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:59.795] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:01:00.104] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Users}
+                          ^^^^^^^^^^^^^^
+[00:01:00.272] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Users}
+                          ^^^^^^^^^^^^^^
+[00:01:04.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:04.775] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/practica" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:01:08.502] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:01:08.725] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Briefcase}
+                          ^^^^^^^^^^^^^^^^^^
+[00:01:08.861] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Briefcase}
+                          ^^^^^^^^^^^^^^^^^^
+[00:03:57.009] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:57.163] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/practica" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:03:58.786] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:03:59.041] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:03:59.180] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:04:06.645] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:04:06.859] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:04:07.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:07.202] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:04:09.657] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:04:09.864] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:04:10.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:10.179] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:04:12.933] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:13.077] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/practica" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <SegmentViewNode type="layout" pagePath="/LustigLeg...">
+                  <SegmentTrieNode>
+                  <link>
+                  <script>
+                  <script>
+                  <script>
+                  <RootLayout>
+                    <html lang="es" className="inter_98ad...">
+                      <body className="font-sans ...">
+                        <ClientLayout>
+                          <h reCaptchaKey="6LeIxAcTAA...">
+                            <Navbar onOpenConsultation={function openConsultation}>
+                              <MotionComponent>
+                              <div
++                               className="fixed inset-0 z-40 flex flex-col items-center justify-center transition-all..."
+-                               className="fixed bottom-6 right-6 z-[55] flex items-center justify-end"
+                                style={{
++                                 backgroundColor: "rgba(11, 17, 32, 0.95)"
+-                                 opacity: "0"
+-                                 transform: "translateY(40px) translateZ(0px)"
+                                }}
+                              >
++                               <div className="flex flex-col items-center gap-8">
+-                               <a
+-                                 href="https://wa.me/593984546419?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%..."
+-                                 target="_blank"
+-                                 rel="noopener noreferrer"
+-                                 aria-label="Chatea con nosotros por WhatsApp"
+-                                 className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg"
+-                                 style={{background-color:"rgb(37, 21...",box-shadow:"rgba(37, 2..."}}
+-                                 tabindex="0"
+-                               >
+                            ...
+              ...
+
+[00:04:59.334] Server  LOG     ✓ Compiled in 103ms
+[00:05:18.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:20.052] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:05:20.310] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:05:20.460] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:05:23.241] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:37.677] Server  WARN    ⚠ Cross origin request detected from 172.23.224.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:05:37.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:39.428] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:05:39.675] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:05:39.850] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Scale}
+                          ^^^^^^^^^^^^^^
+[00:05:47.335] Server  ERROR   Only plain objects can be passed to Client Components from Server Components. Classes or other objects with methods are not supported.
+  {slug: ..., title: ..., shortDescription: ..., fullDescription: ..., icon: {$$typeof: ..., render: ...}, heroImage: ..., servicesList: ..., successCases: ..., metaTitle: ..., metaDescription: ...}
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:05:47.597] Server  ERROR   ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Users}
+                          ^^^^^^^^^^^^^^
+[00:05:47.766] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {$$typeof: ..., render: function Users}
+                          ^^^^^^^^^^^^^^
+[00:06:24.338] Server  LOG     ✓ Compiled in 72ms
+[00:06:24.859] Server  ERROR   ⨯ TypeError: Cannot read properties of undefined (reading 'title')
+[00:06:25.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:25.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:25.612] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'title')
+[00:06:26.439] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:26.744] Server  LOG     ✓ Compiled in 149ms
+[00:06:26.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:34.856] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:09:01.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:23.636] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

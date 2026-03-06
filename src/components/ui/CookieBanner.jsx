@@ -1,6 +1,8 @@
+"use client"
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export function CookieBanner() {
     const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +47,7 @@ export function CookieBanner() {
                             <p className="text-slate-300 text-sm md:text-base leading-relaxed">
                                 Utilizamos cookies técnicas para asegurar el funcionamiento de la web.
                                 Al navegar o utilizar nuestro botón de WhatsApp, usted acepta nuestra{' '}
-                                <Link to="/privacidad" className="text-accent hover:underline font-medium">
+                                <Link href="/privacidad" className="text-accent hover:underline font-medium">
                                     Política de Privacidad
                                 </Link>{' '}
                                 y el uso de cookies de terceros necesarias para la comunicación.

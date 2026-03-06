@@ -1,7 +1,12 @@
+"use client"
+
+import { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
+import { ConsultationContext } from '../layout/ClientLayout';
 
-export function Hero({ onOpenConsultation }) {
+export function Hero() {
+    const openConsultation = useContext(ConsultationContext);
     return (
         <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
             {/* Background Image */}
@@ -42,7 +47,7 @@ export function Hero({ onOpenConsultation }) {
                     </p>
 
                     <div className="flex gap-4">
-                        <Button variant="primary" onClick={onOpenConsultation}>
+                        <Button variant="primary" onClick={openConsultation}>
                             Agendar Consulta
                         </Button>
                         <Button variant="outline">Áreas de Práctica</Button>

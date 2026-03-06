@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/LustigLegal1_42f883f8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__9c76a8af._.js")
+R.c("server/chunks/ssr/526a4_next_dist_esm_build_templates_app-page_6f9e4ddb.js")
+R.c("server/chunks/ssr/[root-of-the-server]__6180924e._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__88eec38d._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__b474ae15._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__26adb0a5._.js")
+R.c("server/chunks/ssr/526a4_next_dist_client_components_e1b52b63._.js")
+R.c("server/chunks/ssr/526a4_next_dist_client_components_builtin_forbidden_2ea3761c.js")
+R.c("server/chunks/ssr/LustigLegal1__next-internal_server_app__not-found_page_actions_c53aa00c.js")
+R.m(55647)
+module.exports=R.m(55647).exports

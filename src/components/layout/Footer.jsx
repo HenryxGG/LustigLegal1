@@ -1,3 +1,5 @@
+"use client"
+
 export function Footer({ onOpenConsultation }) {
     return (
         <footer className="bg-primary text-slate-400 py-12 border-t border-slate-800">

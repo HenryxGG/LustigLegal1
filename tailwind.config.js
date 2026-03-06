@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {
@@ -14,8 +14,8 @@ export default {
                 "dark-bg": "#0B1120",
             },
             fontFamily: {
-                serif: ['"Playfair Display"', 'serif'],
-                sans: ['"Inter"', 'sans-serif'],
+                serif: ['var(--font-playfair)', 'serif'],
+                sans: ['var(--font-inter)', 'sans-serif'],
             }
         },
     },
